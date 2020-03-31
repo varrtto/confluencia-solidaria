@@ -11,7 +11,6 @@ import StarRatingComponent from 'react-star-rating-component';
 class IndexPost extends React.Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
@@ -69,13 +68,16 @@ const IndexPage = data => (
 
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Banner BannerData={data.data.allContentfulHeaderBanner.edges} />
-    <LatestBlogs data={data.data.allContentfulBlogs} />
+    {console.log(data.file)} 
+    <Banner image={data.data.file.childImageSharp.fluid} 
+            heading="Confluencia Solidaria" 
+            subHeading="¡Ayudemos a negocios que nos necesitan, haciendo pre-compras!"/>
     <div className="container">
-      <div className="text-center"><h2 className="with-underline">Latest Items</h2></div>
+      <div className="text-center"><h2 className="with-underline">Últimos Productos</h2></div>
       <IndexPost data={data}></IndexPost>
     </div>
-    <Countdown data={data.data.contentfulDealCountDown} />
+    <LatestBlogs data={data.data.allContentfulBlogs} />
+    {/* <Countdown data={data.data.contentfulDealCountDown} /> */}
   </Layout>
 )
 
@@ -143,6 +145,14 @@ export const query = graphql`
         }
       }
       date(formatString: "D MMMM, YYYY")
+    }
+    file(relativePath: { eq: "fondonqn.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     allContentfulBlogs(limit: 3,sort:{fields:createdAt,order: DESC}) {
       edges {
