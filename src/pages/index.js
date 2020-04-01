@@ -96,7 +96,9 @@ const IndexPage = data => (
       
       <div className="text-center"><h1 className="with-underline">Últimos Vouchers</h1></div>
       
-      <IndexPost data={data}></IndexPost>
+      <h3>En estos momentos nos encontramos cargando los Vouchers que nos enviaron. Volvé más tarde para verlos en esta seccion 😃</h3>
+
+      {/* <IndexPost data={data}></IndexPost> */}
     </div>
     {/* <LatestBlogs data={data.data.allContentfulBlogs} /> */}
     {/* <Countdown data={data.data.contentfulDealCountDown} /> */}
