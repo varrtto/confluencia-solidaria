@@ -5,8 +5,8 @@ const { spaceId, accessToken, snipcart } = process.env;
 
 module.exports = {
   siteMetadata: {
-    title: `OneShopper`,
-    description: `E-Commerce site with Gatsby and React`,
+    title: `Confluencia Solidaria`,
+    description: `Sitio para realizar pre-compras, para ayudar a negocios golpeados por la cuarentena.`,
     author: `@rohitguptab`,
   },
   plugins: [
@@ -24,13 +24,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `OneShopper`,
+        name: `Confluencia Solidaria`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/oneshopper-logo.png`,
+        icon: `src/images/confluencia-logo.png`,
       },
     },
     {

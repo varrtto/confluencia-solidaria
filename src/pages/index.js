@@ -67,7 +67,7 @@ class IndexPost extends React.Component {
 const IndexPage = data => (
 
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Inicio" keywords={[`confluencia`, `cuarentena`, `ayuda`]} />
     {console.log(data.file)} 
     <Banner image={data.data.file.childImageSharp.fluid} 
             heading="CONFLUENCIA SOLIDARIA" 

@@ -6,7 +6,7 @@ class Contact extends React.Component {
     render() {
         return (
             < Layout >
-                <SEO title="Contact Us" keywords={[`gatsby`, `application`, `react`]} />
+                <SEO title="Contacto" keywords={[`contacto`, `confluencia`, `solidaria`]} />
                 <div className="Contact-us">
                     <div className="container">
                         {/* To make form work, use your own formspree credentials in action="" */}

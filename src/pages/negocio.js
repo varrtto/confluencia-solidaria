@@ -7,7 +7,7 @@ class Contact extends React.Component {
     render() {
         return (
             < Layout >
-                <SEO title="Contact Us" keywords={[`gatsby`, `application`, `react`]} />
+                <SEO title="Agregar Oferta" keywords={[`formulario`, `cuarentena`, `comprar`]} />
                 <div className="Contact-us">
                     <div className="container">
                         <h2>Completá el Formulario</h2>
