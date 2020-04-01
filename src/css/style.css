@@ -50,6 +50,8 @@ span.price{font-weight:bold;font-size:30px;}
 
 /* About */
 h2 {color:red}
+.medium-text {font-size: 130%}
+.shadow-box {-webkit-box-shadow:0 5px 10px -3px rgba(0,0,0,0.25);box-shadow:0 5px 10px -3px rgba(0,0,0,0.25);-webkit-transition:-webkit-box-shadow 0.2s;-o-transition:box-shadow 0.2s;transition:box-shadow 0.2s,-webkit-box-shadow 0.2s;}
 
 /* slider css */
 .slick-slider .slick-list div{display:inline-block;width:100%;text-align:left;}

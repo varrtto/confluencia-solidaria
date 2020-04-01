@@ -9,7 +9,7 @@ export default class LatestBlogs extends React.Component {
 
         return (
             <div className="container">
-                <div className="text-center"><h2 className="with-underline">Últimas Notas</h2></div>
+                <div className="text-center"><h1 className="with-underline">Últimas Notas</h1></div>
                 <ul className="latest-blog">
                     {data.edges.map(items => (
                         <li key={items.node.id}>

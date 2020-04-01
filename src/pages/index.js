@@ -72,8 +72,30 @@ const IndexPage = data => (
     <Banner image={data.data.file.childImageSharp.fluid} 
             heading="CONFLUENCIA SOLIDARIA" 
             subHeading="¡Ayudemos a negocios que nos necesitan, haciendo pre-compras!"/>
+    
+      <div className="container">
+
+        <div className="text-center">
+          <h2 className="with-underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        </div>
+        <div className="row">
+          <div className="col-3 text-center"/>
+          <div className="col-6 text-center"></div>
+        </div>
+        <div className="row">
+          <div className="col-3 text-center"/>
+          <div className="col-6 text-center">
+            <p className="medium-text">Ayudemos a PyMEs, autónomos/as y emprendedores que no pueden ofrecer sus servicios a distancia ni realizar 
+            delivery de sus productos. <b>Compremos vouchers abonando por adelantado para usar luego de la cuarentena.</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    
     <div className="container">
-      <div className="text-center"><h2 className="with-underline">Últimos Productos</h2></div>
+      
+      <div className="text-center"><h1 className="with-underline">Últimos Vouchers</h1></div>
+      
       <IndexPost data={data}></IndexPost>
     </div>
     <LatestBlogs data={data.data.allContentfulBlogs} />

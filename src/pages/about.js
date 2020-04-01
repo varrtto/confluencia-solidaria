@@ -27,7 +27,7 @@ class About extends React.Component {
                     <br/>
                     <h4>¿Cómo uso mi voucher?</h4>
                     <p>Guardá el comprobante de transacción de MercadoPago, con ese número quien ofrezca el producto/servicio podrá constatar que hiciste el pago. 
-                        Igual no te olvides de contactar al emprendedor para avisarle que ya realizaste una preventa 😉</p>
+                        Igual no te olvides de contactar al emprendedor para avisarle que ya realizaste una precompra 😉</p>
                     <br/>
                     <h4>¿Hasta cuándo puedo usar mi voucher?</h4>
                     <p>Esa información está <b>publicada en las descripciones de cada voucher</b>. 
@@ -44,7 +44,7 @@ class About extends React.Component {
                         los ayudamos a que puedan cubrir sus gastos fijos del mes.</p>
 
                     <br/>
-                    <h4>Si no soy del valle y quiero publicar una preventa?</h4>
+                    <h4>Si no soy del valle y quiero publicar una precompra?</h4>
                     <p>Si no sos de la zona y ésta herramienta te viene bien, te recomendamos publicar tu voucher en la página <a href="http://teban.co/">TeBanco.Co</a> que es otra herramienta solidaria  que incluye otras zonas del país!</p>
 
                     <br/>
