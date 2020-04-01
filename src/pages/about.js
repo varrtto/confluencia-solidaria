@@ -1,79 +1,64 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import faq from "../images/faq.png"
+
 class About extends React.Component {
     render() {
-        return ( <
-            Layout >
-            <SEO title="About" keywords={[`gatsby`, `application`, `react`]} /> <
-            div className = "site-About" >
+        return ( 
+            <Layout>
+            <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
+            
             <div className="container">
             <div className="row">
                 <div className="col-sm-12">
-                    <h2>About Us</h2>
-                    <p>This Started created for Ecommerce site with Gatsby + Contentful and snipcart</p>
-                    <p><a href="https://rohitgupta.design/oneshopper-gatsby-site" target="_blank">https://rohitgupta.design/oneshopper-gatsby-site</a></p>
-                    <h2>Author</h2>
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <img src="https://images.ctfassets.net/hwhhx381e090/5IlJCTvfaBL5TZ1U56ykpb/098bdd3b3f918aa29708f28fec7fdde9/rohitgupta.jpg?w=200&h=200&q=50&fit=fill" />
-                        </div>
-                        <div class="col-sm-8">
-                            <h2 class="mb-1">Rohit Gupta</h2>
-                            <p class="mb-0">
-                                <a href="https://rohitgupta.design/" target="_blank">Website</a>
-                            </p>
-                            <p class="mb-0">
-                                <a href="mailto:rohitguptab33@gmail.com">Gmail</a>
-                            </p>
-                            <p class="mb-0">
-                                <a href="https://github.com/rohitguptab" target="_blank">Github</a>
-                            </p>
-                            <p class="mb-0">
-                                <a href="https://twitter.com/_rohitguptab" target="_blank">Twitter</a>
-                            </p>
-                        </div>
-                    </div>
-                    <h2>Features</h2>
-                    <ul>
-                        <li>Blog post listing with for each blog post.</li>
-                        <li>Store page with all Product with few good features like Rating, Price, Checkout, More then one Product images with tabbing.</li>
-                        <li>Contact form with Email notification.</li>
-                        <li>Index pages design with Latest Post, Latest Blog and Deal of week and Banner.</li>
-                        <li>So many other Good features</li>
-                    </ul>
-                    <h2>Setup</h2>
-                    <h3>Create a Gatsby site.</h3>
-                    <p>Use the Gatsby CLI to Clone this site.</p>
-                    <code>
-                        # Clone this Repositories<br></br>
-                        gatsby new OneShopper https://github.com/Rohitguptab/OneShopper.git
-                    </code>
-                    <p>Checkout my below blog how to Import and Export data from ContentFul</p>
-                    <p><a href="https://rohitgupta.design/import-and-export-data-with-contentful-cli" target="_blank">https://rohitgupta.design/import-and-export-data-with-contentful-cli</a></p>
-                    <h3>Start developing.</h3>
-                    <p>Navigate into your new site’s directory and start it up.</p>
-                    <code>
-                        cd OneShopper<br></br>
-                        npm install<br></br>
-                        gatsby develop
-                    </code>
-                    <h3>Setup your Own Configure Projects.</h3>
-                    <p>Enter your own key</p>
-                    <strong>ContentFul:</strong>
-                    <ul>
-                        <li>spaceId = Key</li>
-                        <li>accessToken = Key</li>
-                    </ul>
-                    <strong>snipcart:</strong>
-                    <ul>
-                        <li>snipcart = Key</li>
-                    </ul>
+                    <br/>
+                    <img src={faq}/>
+                    <h2>Preguntas Frecuentes</h2>
+                    
+                    <br/>
+                    <h4>¿Que zonas abarcan?</h4>
+                    <p>Queremos ser el punto de referencia de la zona del <b>valle de Neuquén-Rio Negro</b>. Si sos de Buenos Aires entrá a <a href="http://teban.co/">TeBanco.Co</a>  
+                    &nbsp;la cual fue la página que nos inspiró a crear esta.</p>
+                    <br/>
+                    <h4>¿Este servicio tiene algún costo?</h4>
+                    <p><b>No</b>, esta plataforma la armamos para ayudar a aquellas personas que están imposibilitadas de ofrecer su servicio/productos por la cuarentena. 
+                        Lo que te va a cobrar un porcentaje de la transacción es MercadoPago, mirá en su página cuál será el costo.</p>
+                    <br/>
+                    <h4>¿Cómo uso mi voucher?</h4>
+                    <p>Guardá el comprobante de transacción de MercadoPago, con ese número quien ofrezca el producto/servicio podrá constatar que hiciste el pago. 
+                        Igual no te olvides de contactar al emprendedor para avisarle que ya realizaste una preventa 😉</p>
+                    <br/>
+                    <h4>¿Hasta cuándo puedo usar mi voucher?</h4>
+                    <p>Esa información está <b>publicada en las descripciones de cada voucher</b>. 
+                        Si tenés alguna duda, escribile a quién ofrece el servicio a los contactos que proporciona.</p>
+                    <br/>
+                    <h4>¿Qué pasa si no cumplen con lo prometido?</h4>
+                    <p><a href="/">Confluenciasolidaria.com</a> es una plataforma gratuita sin objetivo de lucro, es creada para aquellas personas que no pueden ofrecer su trabajo en este momento, no podemos hacernos cargo del cumplimiento de los mismos. 
+                        Comprá el voucher si confías en ellos, podés contactarlos por las vías de comunicación que ofrecen.</p>
+
+                    <br/>
+                    <h4>¿Por qué hacen esta plataforma si no ganan nada?</h4>
+                    <p>Con la medida del aislamiento nos cuidamos la salud entre tod@s pero tambien hay muchas personas que ven gravemente 
+                        afectada su situación económica. Sabemos que no le vamos a resolver los problemas a esas personas, pero al menos, entre todos, 
+                        los ayudamos a que puedan cubrir sus gastos fijos del mes.</p>
+
+                    <br/>
+                    <h4>Si no soy del valle y quiero publicar una preventa?</h4>
+                    <p>Si no sos de la zona y ésta herramienta te viene bien, te recomendamos publicar tu voucher en la página <a href="http://teban.co/">TeBanco.Co</a> que es otra herramienta solidaria  que incluye otras zonas del país!</p>
+
+                    <br/>
+                    <h4>Agradecimientos y gente que hizo esto posible</h4>
+                    <p>Queremos agredecer a las chicas de <a href="http://teban.co/">TeBanco.Co</a> por tener tan buena idea y dejarnos copiar varios de los texts
+                    de esta página para poder sacarla lo más rápido posible.</p>
+
+
+
+
                 </div>
             </div>
-        </div> <
-            /div> <
-            / Layout>
+        </div> 
+        </ Layout>
         )
     }
 }
