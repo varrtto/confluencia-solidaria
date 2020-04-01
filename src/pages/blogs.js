@@ -52,10 +52,10 @@ class BlogsPost extends React.Component {
                 </div>
                 <div className="post-details">
                   <h2 className="post-title"><Link to={`/${items.node.slug}`}>{items.node.title}</Link></h2>
-                  <div className="author">
-                    <Img sizes={items.node.author.photo.fluid} />
-                    <strong className="name">{items.node.author.name}</strong>
-                  </div>
+                  {/* <div className="author">
+                    <Img sizes={items.node.business.photo.fluid} />
+                    <strong className="name">{items.node.business.name}</strong>
+                  </div> */}
                   <p>{items.node.description.childMarkdownRemark.excerpt}</p>
 
                 </div>
@@ -89,20 +89,6 @@ export const query = graphql`
             title
             slug
             publicData(formatString: "MMMM D, YYYY")
-            author {
-              name
-              photo {
-                fluid(maxWidth: 350) {
-                  base64
-                  aspectRatio
-                  src
-                  srcSet
-                  srcWebp
-                  srcSetWebp
-                  sizes
-                }
-              }
-            }
             description {
               childMarkdownRemark {
                 excerpt(pruneLength: 250)

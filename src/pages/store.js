@@ -50,11 +50,11 @@ class IndexPost extends React.Component {
                   <h2>
                     <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
                   </h2>
-                  <StarRatingComponent
+                  {/* <StarRatingComponent
                     name="rate1"
                     starCount={5}
                     value={items.node.rating}
-                  />
+                  /> */}
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
                     <div className="col-sm-4 align-self-center">
@@ -70,7 +70,7 @@ class IndexPost extends React.Component {
                         data-item-name={items.node.name}
                         data-item-url={`/`}
                       >
-                        <i className="fas fa-shopping-bag" />Add to Cart
+                        <i className="fas fa-shopping-bag" />Ver
                     </a>
                     </div>
                   </div>

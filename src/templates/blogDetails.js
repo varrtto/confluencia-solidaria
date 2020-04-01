@@ -23,10 +23,10 @@ const BlogDetails = data => (
                         <i className="fas fa-calendar-alt"></i>
                         {data.data.contentfulBlogs.publicData}
                     </div>
-                    <div className="author">
-                        <Img sizes={data.data.contentfulBlogs.author.photo.fixed} />
-                        <strong className="name">{data.data.contentfulBlogs.author.name}</strong>
-                    </div>
+                    {/* <div className="author">
+                        <Img sizes={data.data.contentfulBlogs.business.photo.fixed} />
+                        <strong className="name">{data.data.contentfulBlogs.business.name}</strong>
+                    </div> */}
                     <div
                         dangerouslySetInnerHTML={{
                             __html: data.data.contentfulBlogs.description.childMarkdownRemark.html
@@ -55,17 +55,6 @@ export const query = graphql`
             title
             slug
             publicData(formatString: "MMMM D, YYYY")
-            author {
-            name
-            photo {
-                fixed(width: 50, height: 50) {
-                width
-                height
-                src
-                srcSet
-                }
-            }
-            }
             description {
                 childMarkdownRemark {
                     html

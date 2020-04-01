@@ -5,8 +5,7 @@ import "../css/font-awesome.css"
 import "bootstrap/dist/css/bootstrap.css"
 import "../css/style.css"
 import SEO from "../components/seo"
-import logo from "../images/oneshopper-logo.png"
-import logocs from "../images/logo-cs.png"
+import logo from "../images/confluencia-logo.png"
 
 
 
@@ -17,7 +16,7 @@ const Header = ({ siteTitle }) => (
     <div className="container">
       <div className="row">
         <div className="col-sm-12 col-md-4 align-self-center">
-          <Link className="header-logo" to="/"><img src={logocs}></img></Link>
+          <Link className="header-logo" to="/"><img src={logo}></img></Link>
         </div>
         <div className="col-sm-12 col-md-8 align-self-center">
           <nav>

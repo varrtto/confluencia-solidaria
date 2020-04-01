@@ -19,7 +19,7 @@ export default class Banner extends React.Component {
                   <div>
                     <h1>{this.props.heading}</h1>
                     <span className="sub-title">{this.props.subHeading}</span>
-                    <p><Link to="/store">Comprar Ahora!</Link></p>
+                    <p><br/><Link to="/store">Comprar Ahora!</Link></p>
                   </div>
                 </div>
               </div>

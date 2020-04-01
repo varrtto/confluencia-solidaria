@@ -30,11 +30,11 @@ class IndexPost extends React.Component {
                   <h2>
                     <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
                   </h2>
-                  <StarRatingComponent
+                  {/* <StarRatingComponent
                     name="rate1"
                     starCount={5}
                     value={items.node.rating}
-                  />
+                  /> */}
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
                     <div className="col-sm-4 align-self-center">
@@ -50,7 +50,7 @@ class IndexPost extends React.Component {
                         data-item-name={items.node.name}
                         data-item-url={`/`}
                       >
-                        <i className="fas fa-shopping-bag" />Add to Cart
+                        <i className="fas fa-shopping-bag" />Ver
                     </a>
                     </div>
                   </div>
@@ -70,7 +70,7 @@ const IndexPage = data => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     {console.log(data.file)} 
     <Banner image={data.data.file.childImageSharp.fluid} 
-            heading="Confluencia Solidaria" 
+            heading="CONFLUENCIA SOLIDARIA" 
             subHeading="¡Ayudemos a negocios que nos necesitan, haciendo pre-compras!"/>
     <div className="container">
       <div className="text-center"><h2 className="with-underline">Últimos Productos</h2></div>
@@ -131,22 +131,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulDealCountDown {
-      title
-      featureImage {
-        fluid(maxWidth: 1800) {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-        }
-      }
-      date(formatString: "D MMMM, YYYY")
-    }
-    file(relativePath: { eq: "fondonqn.jpg" }) {
+    file(relativePath: { eq: "fondonqn4.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         fluid {
