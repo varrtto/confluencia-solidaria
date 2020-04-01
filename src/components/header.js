@@ -22,10 +22,10 @@ const Header = ({ siteTitle }) => (
           <nav>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/">Inicio</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/blogs">Tengo Un Negocio</Link>
+                <Link className="nav-link" to="/negocio">Agregar Oferta</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/store">Ofertas</Link>
