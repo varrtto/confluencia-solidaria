@@ -15,7 +15,7 @@ class Contact extends React.Component {
                             Envíanos los datos de tu negocio, y de la oferta que querés que publiquemos GRATIS!
                             Una vez que lo recibamos y validemos, lo subiremos enseguida a la página y estará disponible para todo el que lo quiera comprar.
 
-                            Necesitarás generar un link de pago de MercadoPago para poder recibir tu dinero. &nbsp;&nbsp;
+                            Es opcional (pero conveniente) que tengas un link de pago de MercadoPago para poder recibir tu dinero. &nbsp;&nbsp;
                             <a href="https://blog.mercadopago.com/2017/07/21/cobra-por-email-chat-y-redes-sociales-a-traves-de-mercado-pago/">Acá tenés un tutorial.</a>
                         </p>
 
