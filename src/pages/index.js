@@ -98,7 +98,7 @@ const IndexPage = data => (
       
       <IndexPost data={data}></IndexPost>
     </div>
-    <LatestBlogs data={data.data.allContentfulBlogs} />
+    {/* <LatestBlogs data={data.data.allContentfulBlogs} /> */}
     {/* <Countdown data={data.data.contentfulDealCountDown} /> */}
   </Layout>
 )
