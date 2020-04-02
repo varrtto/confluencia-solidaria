@@ -11,6 +11,9 @@ export default class Product extends React.Component {
   }
 
   priceWithDiscount(price, newPrice) {
+    if (price==null || price == 0) {
+      return
+    }
     if (newPrice > 0) {
       return (
         <>
@@ -64,8 +67,7 @@ export default class Product extends React.Component {
             {this.priceWithDiscount(items.node.price, items.node.newPrice)}
             <div className="col-sm-8 text-right align-self-center">
               <a
-                href={items.node.mercadopago}
-                target="_blank"
+                href={`/${items.node.slug}`}
                 className="Product snipcart-add-item"
                 data-item-id={items.node.slug}
                 data-item-price={items.node.price}
@@ -73,7 +75,7 @@ export default class Product extends React.Component {
                 data-item-name={items.node.name}
                 data-item-url={`/`}
               >
-                <i className="fas fa-shopping-bag" />Comprar
+                <i className="fas fa-shopping-bag" />Ver
             </a>
             </div>
           </div>

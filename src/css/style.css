@@ -11,6 +11,9 @@
 .product-details{}
 .product-details .gatsby-image-wrapper{height:500px;}
 
+/*Common*/
+.rounded-box{padding:10px;margin:10px;background-color:#EEE;border:1px solid #DDD;border-radius: 4px;}
+
 /* header css */
 header.site-header{width:100%;background:#2E297D;z-index:9;padding:20px 0;}
 ul.navbar-nav.mr-auto li{margin-bottom:0;}
@@ -53,7 +56,7 @@ span.old-price{font-weight:normal;font-size:20px;text-decoration: line-through;}
 /* About */
 h2 {color:red}
 .medium-text {font-size: 130%}
-.shadow-box {-webkit-box-shadow:0 5px 10px -3px rgba(0,0,0,0.25);box-shadow:0 5px 10px -3px rgba(0,0,0,0.25);-webkit-transition:-webkit-box-shadow 0.2s;-o-transition:box-shadow 0.2s;transition:box-shadow 0.2s,-webkit-box-shadow 0.2s;}
+.shadow-box {-webkit-box-shadow:2px 5px 10px -3px rgba(0,0,0,0.25);box-shadow:2px 5px 10px -3px rgba(0,0,0,0.25);-webkit-transition:-webkit-box-shadow 0.2s;-o-transition:box-shadow 0.2s;transition:box-shadow 0.2s,-webkit-box-shadow 0.2s;}
 
 /* slider css */
 .slick-slider .slick-list div{display:inline-block;width:100%;text-align:left;}

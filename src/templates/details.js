@@ -13,6 +13,9 @@ export default class ProductDetails extends React.Component {
 
   
   priceWithDiscount(price, newPrice) {
+    if (price==null || price == 0) {
+      return
+    }
     if (newPrice > 0) {
       return (
         <>
@@ -35,8 +38,28 @@ export default class ProductDetails extends React.Component {
     }
   }
 
-  buyComponent() {
-
+  buyComponent(node) {
+    if (node.mercadopago!=null && node.mercadopago.length > 6) {
+      return (
+              <a
+                href={node.mercadopago}
+                target="_blank"
+                className="Product snipcart-add-item"
+              >
+                <i className="fas fa-tags" />
+                Comprar
+              </a>
+      )
+    }
+    else {
+      return (
+        <div className="rounded-box shadow-box">
+          <p>Está venta no cuenta con mercado pago, contáctate al número del vendedor 
+            para acordar las condiciones de pago y entrega</p>
+        </div>
+        
+      )
+    }
   }
 
   render() {
@@ -85,19 +108,7 @@ export default class ProductDetails extends React.Component {
               <span className="price">Price: ${data.contentfulProduct.price}</span>
             </div> */}
             <div className="col-sm-10 text-left">
-              <a
-                href={data.contentfulProduct.mercadopago}
-                target="_blank"
-                className="Product snipcart-add-item"
-                data-item-id={data.contentfulProduct.slug}
-                data-item-price={data.contentfulProduct.price}
-                data-item-image={data.contentfulProduct.image === null ? "" : data.contentfulProduct.image.fixed.src}
-                data-item-name={data.contentfulProduct.name}
-                data-item-url={`/`}
-              >
-                <i className="fas fa-tags" />
-                Comprar
-              </a>
+              {this.buyComponent(data.contentfulProduct)}
             </div>
           </div>
         </div>
