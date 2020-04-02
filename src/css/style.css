@@ -22,7 +22,8 @@ main{margin:0;}
 .header-cart a .Header__summary__line{margin-right:5px;}
 header nav{display:flex;}
 header nav ul.navbar-nav{flex-direction:row;margin:0;width:90%;justify-content:flex-end;}
-header nav ul.navbar-nav li{margin:0 10px;}
+header nav ul.navbar-nav li{padding:0 10px;}
+header nav ul.navbar-nav li{padding:0 10px;border-style: solid; border-color: #FFF; border-width: 0px 0px 0px 1px;}
 header nav ul.navbar-nav li a{color:#fff;}
 
 /* header css */

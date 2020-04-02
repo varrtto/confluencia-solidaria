@@ -17,7 +17,7 @@ const IndexPage = data => (
     {console.log(data.file)} 
     <Banner image={data.data.file.childImageSharp.fluid} 
             heading="CONFLUENCIA SOLIDARIA" 
-            subHeading="¡Ayudemos a negocios que nos necesitan, haciendo pre-compras!"/>
+            subHeading="¡Ayudá comprando tu voucher con descuento ahora, recibí el producto después de la cuarentena!"/>
     
       <div className="container">
 
@@ -31,7 +31,7 @@ const IndexPage = data => (
         <div className="row">
           <div className="col-3 text-center"/>
           <div className="col-6 text-center">
-            <p className="medium-text">Ayudemos a PyMEs, autónomos/as y emprendedores que no pueden ofrecer sus servicios a distancia ni realizar 
+            <p className="medium-text">Ayudemos a negocios que no pueden ofrecer sus servicios a distancia ni realizar 
             delivery de sus productos. <b>Compremos vouchers abonando por adelantado para usar luego de la cuarentena.</b>
             </p>
           </div>
