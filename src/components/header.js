@@ -15,10 +15,10 @@ const Header = ({ siteTitle }) => (
     </SEO>
     <div className="container">
       <div className="row">
-        <div className="col-sm-12 col-md-4 align-self-center">
+        <div className="col-sm-4 col-md-4 align-self-center">
           <Link className="header-logo" to="/"><img src={logo}></img></Link>
         </div>
-        <div className="col-sm-12 col-md-8 align-self-center">
+        <div className="col-sm-8 col-md-8 align-self-center text-center">
           <nav>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
