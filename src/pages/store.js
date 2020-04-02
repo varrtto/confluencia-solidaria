@@ -89,12 +89,7 @@ const IndexPage = data => (
   <Layout>
     <SEO title="Ofertas" keywords={[`cuarentena`, `voucher`, `confluencia`]} />
     <div className="container store-page">
-      {/* <IndexPost data={data}></IndexPost> */}
-      
-      <div className="container">
-      <div className="text-center"><h1 className="with-underline">Ofertas</h1></div>
-        <h3>En estos momentos nos encontramos cargando los Vouchers que nos enviaron. Volvé más tarde para verlos en esta seccion 😃</h3>
-      </div>
+      <IndexPost data={data}></IndexPost>
     </div>
   </Layout>
 )

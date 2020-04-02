@@ -13,6 +13,29 @@ class IndexPost extends React.Component {
     super(props);
   }
 
+  priceWithDiscount(price, newPrice) {
+    if (newPrice > 0) {
+      return (
+        <>
+          <div className="col-sm-6 align-self-center">
+            <span>Antes:</span> <span className="old-price">${price}</span>
+          </div>
+          <div className="col-sm-6 align-self-center">
+            <span>Ahora:</span> <span className="price">${newPrice}</span>
+          </div>
+        </>
+      )
+    }
+    else {
+      return (
+          <div className="col-sm-6 align-self-center">
+            <span className="price">${price}</span>
+          </div>
+        )
+    }
+    
+  }
+
   render() {
 
     const { data } = this.props;
@@ -37,9 +60,13 @@ class IndexPost extends React.Component {
                   /> */}
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
-                    <div className="col-sm-4 align-self-center">
-                      <span className="price">${items.node.price}</span>
+                    {/* <div className="col-sm-6 align-self-center">
+                      <span className="new-price">${items.node.price}</span>
                     </div>
+                    <div className="col-sm-6 align-self-center">
+                      <span className="price">${items.node.newPrice}</span>
+                    </div> */}
+                    {this.priceWithDiscount(items.node.price, items.node.newPrice)}
                     <div className="col-sm-8 text-right align-self-center">
                       <a
                         href="#"
@@ -96,9 +123,7 @@ const IndexPage = data => (
       
       <div className="text-center"><h1 className="with-underline">Últimos Vouchers</h1></div>
       
-      <h3>En estos momentos nos encontramos cargando los Vouchers que nos enviaron. Volvé más tarde para verlos en esta seccion 😃</h3>
-
-      {/* <IndexPost data={data}></IndexPost> */}
+      <IndexPost data={data}></IndexPost>
     </div>
     {/* <LatestBlogs data={data.data.allContentfulBlogs} /> */}
     {/* <Countdown data={data.data.contentfulDealCountDown} /> */}
@@ -128,6 +153,7 @@ export const query = graphql`
             }
           }
           price
+          newPrice
           details {
             childMarkdownRemark {
               excerpt(pruneLength: 140)
