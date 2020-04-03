@@ -7,47 +7,59 @@ import "../css/style.css"
 import SEO from "../components/seo"
 import logo from "../images/confluencia-logo.png"
 
-
-
 const Header = ({ siteTitle }) => (
   <header className="site-header">
-    <SEO>
-    </SEO>
+    <SEO></SEO>
     <div className="container">
-      <div className="row">
-        <div className="col-sm-4 col-md-4 align-self-center">
-          <Link className="header-logo" to="/"><img src={logo}></img></Link>
-        </div>
-        <div className="col-sm-8 col-md-8 align-self-center text-center">
-          <nav>
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <Link className="nav-link" to="/">Inicio</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/store">Ver Vouchers</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">Preguntas Frecuentes</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact-us">Contacto</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/negocio">Sumar Voucher</Link>
-              </li>
-            </ul>
-            {/* </nav>div className="header-cart">
-              <Link className="Header__summary snipcart-summary snipcart-checkout" to="#">
-                <i className="fas fa-cart-plus"></i>
-              </Link>
-            </div> */}
-          </nav>
-        </div>
+      <div className="col-sm-12 col-md-12 text-center center-block">
+        <Link className="header-logo" to="/">
+          <img src={logo}></img>
+        </Link>
       </div>
+      <nav class="navbar column navbar-expand-lg navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse center-block" id="navbarNav">
+          <ul class="navbar-nav" style={{"width": "100%", "justifyContent": "center"}}>
+            <li class="nav-item">
+              <Link className="nav-link" to="/">
+                Inicio
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link className="nav-link" to="/store">
+                Ver Vouchers
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link className="nav-link" to="/about">
+                Preguntas Frecuentes
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link className="nav-link" to="/contact-us">
+                Contacto
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link className="nav-link" to="/negocio">
+                Sumar Voucher
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-
-  </header >
+  </header>
 )
 
 Header.propTypes = {
